@@ -1,0 +1,32 @@
+.dashboard-container {
+    min-height: 100vh;
+    display: flex;
+    background: #f9fafb;
+  }
+  
+  .dashboard-header {
+    background: white;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .dashboard-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .dashboard-subtitle {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .dashboard-main {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+  }
+  

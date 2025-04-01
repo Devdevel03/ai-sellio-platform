@@ -39,9 +39,9 @@ export default function ChatDemo() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+//  useEffect(() => {
+  //  scrollToBottom();
+  //}, [messages]);
 
   const handleSendMessage = () => {
     if (!input.trim()) return;

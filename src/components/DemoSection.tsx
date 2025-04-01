@@ -1,6 +1,8 @@
 
 import { Button } from '@/components/ui/button';
 import ChatDemo from './ChatDemo';
+import { Link, useNavigate } from "react-router-dom";
+
 
 export default function DemoSection() {
   return (
@@ -56,9 +58,11 @@ export default function DemoSection() {
             </div>
             
             <div>
-              <Button className="bg-brand-500 hover:bg-brand-600">
-                Create Your Own AI Agent
-              </Button>
+          <Link to="/create-agent">
+                <Button className="bg-brand-500 hover:bg-brand-600">
+                    Create Your Own AI Agent
+                </Button>
+          </Link>
             </div>
           </div>
           

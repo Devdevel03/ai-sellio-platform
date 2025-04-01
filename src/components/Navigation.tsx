@@ -23,6 +23,9 @@ export default function Navigation() {
               <Link to="/pricing" className="text-gray-700 hover:text-brand-600 px-3 py-2 text-sm font-medium">
                 Pricing
               </Link>
+              <Link to="/Dashboard" className="text-gray-700 hover:text-brand-600 px-3 py-2 text-sm font-medium">
+              Dashboard
+            </Link>
               <div className="relative group">
                 <button className="text-gray-700 group-hover:text-brand-600 px-3 py-2 text-sm font-medium inline-flex items-center">
                   <span>Resources</span>
@@ -43,14 +46,14 @@ export default function Navigation() {
           <div className="hidden md:flex md:items-center md:space-x-4">
             <Button 
               variant="ghost" 
-              onClick={() => navigate('/login')}
+              onClick={() => navigate('/signin')}
               className="text-gray-700"
             >
               Sign in
             </Button>
             <Button 
               variant="default" 
-              onClick={() => navigate('/register')}
+              onClick={() => navigate('/SignUpPage')}
               className="bg-brand-500 hover:bg-brand-600"
             >
               Get Started
@@ -87,7 +90,14 @@ export default function Navigation() {
               Pricing
             </Link>
             <Link 
-              to="/docs" 
+              to="/Dashboard" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Dashboard
+            </Link>
+            <Link 
+              to="/DocumentationPage" 
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -112,7 +122,7 @@ export default function Navigation() {
             <Button 
               variant="outline" 
               onClick={() => {
-                navigate('/login');
+                navigate('/signin');
                 setIsMenuOpen(false);
               }}
               className="w-full justify-center"

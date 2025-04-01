@@ -6,8 +6,15 @@ import FeaturesSection from '@/components/FeaturesSection';
 import DemoSection from '@/components/DemoSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
+import { useScrollToTopOnNavigate } from "@/hooks/useScrollToTopOnNavigate"
+
+
+
+
+
 
 const Index = () => {
+  useScrollToTopOnNavigate();
   return (
     <div className="min-h-screen">
       <Navigation />
